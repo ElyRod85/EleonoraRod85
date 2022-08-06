@@ -59,7 +59,6 @@ const allEspanolText = document.getElementsByClassName("esp");
   selectedEnglish.classList.add("langSelected");
   selectedEspanol.classList.remove("langSelected");
   showEnglishText();
-  localStorage.setItem("languageActive", "english");
   });
 
 //ES -> EN OFF
@@ -67,7 +66,6 @@ const allEspanolText = document.getElementsByClassName("esp");
   selectedEspanol.classList.add("langSelected");
   selectedEnglish.classList.remove("langSelected");
   showSpanishText();
-  localStorage.setItem("languageActive", "espanol");
   });
 
 // Default language
