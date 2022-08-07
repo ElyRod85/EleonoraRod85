@@ -580,19 +580,22 @@ section {
 
 .study-year {
   font-size: 16px;
-  color: rgb(100, 100, 100);
+  color: rgb(115, 115, 115);
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .study-place {
   font-size: 16px;
+  color: rgb(115, 115, 115);
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .study-degree {
   font-size: 22px;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .frontend:hover {
@@ -926,19 +929,22 @@ section {
 
 .exp-year {
   font-size: 16px;
-  color: rgb(100, 100, 100);
+  color: rgb(115, 115, 115);
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .exp-place {
   font-size: 16px;
+  color: rgb(115, 115, 115);
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .exp-occ {
   font-size: 22px;
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .exp-desc {
