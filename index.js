@@ -1,5 +1,5 @@
 // Back to top button
-mybutton = document.getElementById("myBtn");
+mybutton = document.getElementById("backButton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -18,11 +18,21 @@ function topFunction() {
 
 
 // Responsive Navbar
-var tglbtn = document.getElementById("nav-toggle");
-var navlst = document.getElementById("nav-list")
-
-tglbtn.addEventListener('click', () => {navlst.classList.toggle("active");});
-
+const header = document.getElementById('header');
+const menutoggle = document.getElementById('menutoggle');
+const navbar = document.getElementById('navbar');
+      
+document.onclick = function(e) {
+  if(e.target.id !== 'header' && e.target.id !== 'menutoggle' && e.target.id !== 'navbar') {
+  menutoggle.classList.remove('active');
+  navbar.classList.remove('active');
+  }
+}
+      
+menutoggle.onclick = function(){
+  menutoggle.classList.toggle('active');
+  navbar.classList.toggle('active');
+}
 
 
 // EN-ES Translation
@@ -35,34 +45,34 @@ const allEnglishText = document.getElementsByClassName("eng");
 const allEspanolText = document.getElementsByClassName("esp");
 
 //EN
-  function showEnglishText() {
-    for (element in allEnglishText) {
-       allEnglishText[element].style = shown;
-    }
-    for (element in allEspanolText) {
-      allEspanolText[element].style = hidden;
-    }
+function showEnglishText() {
+  for (element in allEnglishText) {
+    allEnglishText[element].style = shown;
   }
+  for (element in allEspanolText) {
+    allEspanolText[element].style = hidden;
+  }
+}
 
 //ES
-  function showSpanishText() {
-    for (element in allEnglishText) {
-      allEnglishText[element].style = hidden;
-    }
-    for (element in allEspanolText) {
-      allEspanolText[element].style = shown;
-    }
+function showSpanishText() {
+  for (element in allEnglishText) {
+    allEnglishText[element].style = hidden;
   }
+  for (element in allEspanolText) {
+    allEspanolText[element].style = shown;
+  }
+}
 
 //EN-> ES OFF
-  selectedEnglish.addEventListener("click", () => {
+selectedEnglish.addEventListener("click", () => {
   selectedEnglish.classList.add("langSelected");
   selectedEspanol.classList.remove("langSelected");
   showEnglishText();
   });
 
 //ES -> EN OFF
-  selectedEspanol.addEventListener("click", () => {
+selectedEspanol.addEventListener("click", () => {
   selectedEspanol.classList.add("langSelected");
   selectedEnglish.classList.remove("langSelected");
   showSpanishText();
