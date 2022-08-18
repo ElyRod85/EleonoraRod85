@@ -93,3 +93,6 @@ switch (localStorage.getItem("languageActive")) {
   default:
     showEnglishText();
   }
+
+  // Dark-Light mode
+  const setTheme = theme => document.documentElement.className = theme;
