@@ -14,14 +14,22 @@ body {
   margin: 0;
 }
 
+.dark body {
+  background-color: rgb(22, 22, 22);
+}
+
 a {
   text-decoration: none;
 }
 
 p, h1, h2, h3, h4, h5 {
   color: rgb(73, 73, 73);
-  
 }
+
+.dark h1 {
+  color: rgb(192, 192, 192);
+}
+
 
 h1, h2, h3, h4, h5 {
   margin-top: 30px;
@@ -41,6 +49,10 @@ p {
   letter-spacing: 1px;
   word-spacing: 4px;
   font-family: 'Roboto', sans-serif;
+}
+
+.dark p {
+  color: rgb(192, 192, 192);
 }
 
 h5 {
@@ -99,12 +111,15 @@ header {
   width: 100%;
   background-color: rgb(241, 241, 241);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-  z-index: 98;
+  z-index: 99;
   padding: 0;
   margin: 0;
-  
   }
   
+.dark header {
+  background-color: rgb(22, 22, 22);
+}
+
   .logo {
     height: 80px;
     line-height: 80px;
@@ -115,28 +130,31 @@ header {
     cursor: pointer;
     padding-left: 50px;
     font-family: 'Style Script', cursive;
-    
-    }
+  }
+
+  .dark .logo {
+    color: rgb(212, 212, 212);
+  }
   
-    #menutoggle {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 120px;
-      height: 80px;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgb(133, 62, 156);
-      color: rgb(241, 241, 241);
-      text-transform: uppercase;
-      font-family: 'Roboto', sans-serif;
-      font-size: 18px;
-      font-weight: 900;
-      letter-spacing: 4px;
-      }
-  
+  #menutoggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(133, 62, 156);
+    color: rgb(241, 241, 241);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 4px;
+  }
+
   #menutoggle.active {
     background-color: rgb(143, 100, 158);
   }
@@ -144,7 +162,6 @@ header {
   #menutoggle:hover {
     background-color: rgb(143, 100, 158);
   }
-  
   
   #navbar {
   position: relative;
@@ -163,6 +180,10 @@ header {
   margin: 0;
   padding: 0;
   }
+
+  .dark #navbar {
+    background-color: rgb(22, 22, 22);
+  }
   
   #navbar.active {
   width: 800px;
@@ -172,8 +193,6 @@ header {
   position: relative;
   display: flex;
   flex-direction: row;
-
-  
   }
   
   #navbar ul li {
@@ -188,7 +207,6 @@ header {
   line-height: 60px;
   display: inline-block;
   padding: 0 15px;
-  
   color: rgb(133, 62, 156);
   font-family: 'Alegreya Sans SC', sans-serif;
   text-transform: uppercase;
@@ -196,14 +214,40 @@ header {
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 2px;
+  }
 
+  #navbar button {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    color: rgb(133, 62, 156);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .dark #navbar button {
+    color: rgb(215, 161, 234);
   }
   
+  .dark #navbar ul li a {
+    color: rgb(215, 161, 234);
+  }
+
   #navbar ul li a:hover {
     color: rgb(161, 85, 220);
   }
-  
-  
+
+  #navbar button:hover {
+    color: rgb(161, 85, 220);
+  }
+
+  .dark #navbar ul li a:hover {
+    color: rgb(240, 198, 255);
+  }
+
+  .dark #navbar button:hover {
+    color: rgb(240, 198, 255);
+  }
   
   @media (max-width: 1000px) {
   #navbar {
@@ -245,10 +289,16 @@ header {
   font-family: 'Style Script', cursive;
   
   }
-
-
-  }
+}
   
+@media (max-width: 768px) {
+  #navbar ul li a {
+    font-size: 22px;
+    font-weight: 900;
+    padding: 0;
+    height: 50px;
+    }
+}
   
   
   
@@ -256,7 +306,7 @@ header {
 
 /* Hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url("./images/hero-img.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url("./images/hero-img.jpg");
   height: 700px;
   width: 100%;
   background-position: center;
@@ -267,6 +317,9 @@ header {
   margin-bottom: 20px;
 }
 
+.dark .hero-image {
+  background-image: linear-gradient(rgba(22, 22, 22, 0.7),rgba(22, 22, 22, 1)), url("./images/hero-img.jpg");
+}
 
 .hero-text {
   text-align: center;
@@ -395,16 +448,26 @@ header {
   margin: auto;
   display: block;
   filter: sepia(40%) saturate(120%);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  -webkit-filter: sepia(40%) saturate(120%);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
+.dark .flex-container .about .about-photo img {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
+}
+
 .flex-container .about .about-photo img:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
+}
+
+.dark .flex-container .about .about-photo img:hover {
+  box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2);
 }
 
 .flex-container .about .about-photo img:hover {
   filter: saturate(100%);
+  -webkit-filter: saturate(100%);
 }
 
 .flex-container .about .about-text {
@@ -422,6 +485,10 @@ header {
   word-spacing: 4px;
   font-family: 'Roboto', sans-serif;
   color: rgb(73, 73, 73);
+}
+
+.dark .flex-container .about .about-text p {
+  color: rgb(192, 192, 192);
 }
 
 @media only screen and (max-width: 700px) {
@@ -470,6 +537,14 @@ header {
     color: rgb(73, 73, 73);
 }
 
+.dark .what p {
+  color: rgb(192, 192, 192);
+}
+
+.dark .what li {
+  color: rgb(192, 192, 192);
+}
+
 .what-contents {
   width: 90%;
   
@@ -482,6 +557,10 @@ header {
 
 .what-contents i {
   color: rgb(184, 0, 246);
+}
+
+.dark .what-contents i {
+  color: rgb(182, 121, 231);
 }
 
 .skills {
@@ -521,6 +600,10 @@ header {
   margin-left: auto;
   margin-right: auto;
   color: rgb(133, 62, 156);
+}
+
+.dark .what-title i {
+  color: rgb(165, 116, 205);
 }
 
 .skills-title {
@@ -567,12 +650,6 @@ header {
   padding: 24px;
 }
 
-
-
-
-
-
-
 .skill-tabs {
   display: flex;
   order: 2;
@@ -597,7 +674,7 @@ header {
 }
 
 .skills-card-logo {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 15px;
   width: 130px;
@@ -605,6 +682,14 @@ header {
   display: flex;
   flex-direction: column;
   margin: 10px;
+}
+
+.dark .skills-card-logo {
+  background-color: rgb(32, 30, 34);
+}
+
+.dark .skills-card-logo {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 700px) {
@@ -635,11 +720,13 @@ header {
 
 }
 
-
 .skills-card-logo:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 }
 
+.dark .skills-card-logo:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
 
 .skills-card-logo .def {
   order: 2;
@@ -661,6 +748,14 @@ header {
   color: rgb(116, 116, 116);
   text-align: center;
   justify-content: center;
+}
+
+.dark .skills-card-logo .def {
+  color: rgb(192, 192, 192);
+}
+
+.dark .skills-card-logo .def p {
+  color: rgb(192, 192, 192);
 }
 
 .skills-card-logo .skill1 {
@@ -722,12 +817,21 @@ header {
   border-radius: 10px;
 }
 
+.dark .frontend {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(32, 30, 34);
+}
+
 .frontend .frontend-text {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   width: 100%;
   padding: 20px;
+}
+
+.dark .frontend .frontend-text {
+  color: rgb(192, 192, 192);
 }
 
 .tea {
@@ -741,12 +845,21 @@ header {
   border-radius: 10px;
 }
 
+.dark .tea {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(32, 30, 34);
+}
+
 .tea .tea-text {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   width: 100%;
   padding: 20px;
+}
+
+.dark .tea .tea-text {
+  color: rgb(192, 192, 192);
 }
 
 .study-year {
@@ -756,11 +869,19 @@ header {
   line-height: 1.5;
 }
 
+.dark .study-year {
+  color: rgb(192, 192, 192);
+}
+
 .study-place {
   font-size: 16px;
   color: rgb(115, 115, 115);
   text-transform: uppercase;
   line-height: 1.5;
+}
+
+.dark .study-place {
+  color: rgb(192, 192, 192);
 }
 
 .study-degree {
@@ -769,12 +890,24 @@ header {
   line-height: 1.5;
 }
 
+.dark .study-degree {
+  color: rgb(192, 192, 192);
+}
+
 .frontend:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.dark .frontend:hover { 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .tea:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dark .tea:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -836,6 +969,11 @@ header {
   padding: 20px;
 }
 
+.dark .study-logos img {
+  filter: drop-shadow(0 0 10px rgb(236, 195, 255));
+  -webkit-filter: drop-shadow(0 0 10px rgb(236, 195, 255));
+}
+
 .card1 details {
   display: flex;
   border-radius: 10px;
@@ -847,6 +985,11 @@ header {
   transition: 0.3s;
 }
 
+.dark .card1 details {
+  background-color: rgb(32, 30, 34);
+  border-left: 15px solid rgb(97, 61, 138);
+}
+
 .card2 details {
   display: flex;
   border-radius: 10px;
@@ -856,6 +999,11 @@ header {
   border-left: 15px solid rgb(180, 125, 207);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+}
+
+.dark .card2 details {
+  background-color: rgb(32, 30, 34);
+  border-left: 15px solid rgb(97, 61, 138);
 }
 
 .card1 details:hover {
@@ -871,25 +1019,49 @@ header {
   color: rgb(73, 73, 73); 
 }
 
+.dark .card1 .fa-li i {
+  color: rgb(192, 192, 192);
+}
+
 .card2 .fa-li i {
   display: block;
   color: rgb(73, 73, 73);
 }
 
+.dark .card2 .fa-li i {
+  color: rgb(192, 192, 192);
+}
+
 .card1 a i, i:visited, i:active {
-  color: rgb(133, 62, 156);
+  color: rgb(197, 113, 225);
+}
+
+.dark .card1 a i, i:visited, i:active {
+  color: rgb(151, 98, 169);
 }
 
 .card2 a i, i:visited, i:active {
-  color: rgb(133, 62, 156);
+  color: rgb(197, 113, 225);
+}
+
+.dark .card2 a i, i:visited, i:active {
+  color: rgb(151, 98, 169);
 }
 
 .card1 a i:hover {
-  color: rgb(184, 0, 246);
+  color: rgb(191, 0, 255);
+}
+
+.dark .card1 a i:hover {
+  color: rgb(189, 137, 206);
 }
 
 .card2 a i:hover {
-  color: rgb(184, 0, 246);
+  color: rgb(191, 0, 255);
+}
+
+.dark .card2 a i:hover {
+  color: rgb(189, 137, 206);
 }
 
 
@@ -909,6 +1081,10 @@ header {
   letter-spacing: 1px;
 }
 
+.dark .card1 details summary {
+  color: rgb(192, 192, 192);
+}
+
 .card2 details summary {
   position: relative;
   display: flex;
@@ -925,12 +1101,25 @@ header {
   letter-spacing: 1px;
 }
 
+.dark .card2 details summary {
+  color: rgb(192, 192, 192);
+}
+
 .card1 details summary:focus {
-  color: rgb(133, 62, 156);
+  color: rgb(132, 86, 168);
 }
 
 .card2 details summary:focus {
-  color: rgb(133, 62, 156);
+  color: rgb(132, 86, 168);
+}
+
+
+.dark .card1 details summary:focus {
+  color: rgb(193, 152, 224);
+}
+
+.dark .card2 details summary:focus {
+  color: rgb(193, 152, 224);
 }
 
 .card1 details[open] summary {
@@ -992,6 +1181,10 @@ header {
   max-width: 90%;
 }
 
+.dark .card1 details p {
+  color: rgb(192, 192, 192);
+}
+
 .card2 details p {
   display: list-item;
   cursor: default;
@@ -1007,6 +1200,10 @@ header {
   max-width: 90%;
 }
 
+.dark .card2 details p {
+  color: rgb(192, 192, 192);
+}
+
 .card1 details li {
   font-size: 18px;
   margin-top: 10px;
@@ -1017,6 +1214,10 @@ header {
   font-family: 'Roboto', sans-serif;
   color: rgb(73, 73, 73);
   max-width: 90%;
+}
+
+.dark .card1 details li {
+  color: rgb(192, 192, 192);
 }
 
 .card2 details li {
@@ -1031,7 +1232,9 @@ header {
   max-width: 90%;
 }
 
-
+.dark .card2 details li {
+  color: rgb(192, 192, 192);
+}
 
 
 
@@ -1047,12 +1250,20 @@ header {
   border-radius: 10px;
 }
 
+.dark .exp-wordpress {
+  background-color: rgb(32, 30, 34);
+}
+
 .exp-wordpress .exp-wp-text {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   width: 100%;
   padding: 20px;
+}
+
+.dark .exp-wordpress .exp-wp-text {
+  color: rgb(192, 192, 192);
 }
 
 .exp-translator {
@@ -1066,6 +1277,10 @@ header {
   border-radius: 10px;
 }
 
+.dark .exp-translator {
+  background-color: rgb(32, 30, 34);
+}
+
 .exp-tr-text {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
@@ -1075,11 +1290,19 @@ header {
   font-size: 18px;
 }
 
+.dark .exp-tr-text {
+  color: rgb(192, 192, 192);
+}
+
 .exp-tr-text li {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
+}
+
+.dark .exp-tr-text li {
+  color: rgb(192, 192, 192);
 }
 
 .exp-wp-text {
@@ -1091,11 +1314,19 @@ header {
   font-size: 18px;
 }
 
+.dark .exp-wp-text {
+  color: rgb(192, 192, 192);
+}
+
 .exp-wp-text li {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   font-size: 18px;
+}
+
+.dark .exp-wp-text li {
+  color: rgb(192, 192, 192);
 }
 
 .exp-year {
@@ -1105,6 +1336,10 @@ header {
   line-height: 1.5;
 }
 
+.dark .exp-year {
+  color: rgb(192, 192, 192);
+}
+
 .exp-place {
   font-size: 16px;
   color: rgb(115, 115, 115);
@@ -1112,10 +1347,18 @@ header {
   line-height: 1.5;
 }
 
+.dark .exp-place {
+  color: rgb(192, 192, 192);
+}
+
 .exp-occ {
   font-size: 22px;
   font-weight: 900;
   line-height: 1.5;
+}
+
+.dark .exp-occ {
+  color: rgb(192, 192, 192);
 }
 
 .exp-desc {
@@ -1128,6 +1371,10 @@ header {
   padding-top: 5px;
   padding-bottom: 5px;
   line-height: 1.8;
+}
+
+.dark .exp-desc {
+  color: rgb(192, 192, 192);
 }
 
 .exp-wordpress:hover {
@@ -1157,7 +1404,7 @@ header {
 /* Contact form */
 
 .contact-form {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9)), url("./images/contact.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(241, 241, 241, 1)), url("./images/contact.jpg");
   width: 100%;
   max-height: 900px;
   background-position: center;
@@ -1172,6 +1419,9 @@ header {
   padding-top: 50px;
 }
 
+.dark .contact-form {
+  background-image: linear-gradient(rgba(22, 22, 22, 0.6),rgba(22, 22, 22, 1)), url("./images/contact.jpg");
+}
 
 .contact-form h1 {
   font-family: 'Style Script', cursive;
@@ -1184,6 +1434,10 @@ header {
   margin-bottom: 50px;
 }
 
+.dark .contact-form h1 {
+  color: rgb(220, 220, 220);
+}
+
 .contact-form label {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -1193,6 +1447,10 @@ header {
   font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: 2px;
   font-size: 22px;
+}
+
+.dark .contact-form label {
+  color: rgb(220, 220, 220);
 }
 
 .contact-form button {
@@ -1211,15 +1469,21 @@ header {
   text-transform: uppercase;
   letter-spacing: 3px;
   width: 150px;
-  background-color:rgb(255, 255, 255, 0.8);
-  color: rgb(78, 52, 87);
-  border: 0;
+  background-color: rgb(144, 75, 181);
+  color:rgb(255, 255, 255);
+  border: 3px solid rgb(144, 75, 181);
 }
 
 .contact-form button:hover {
-  background-color: rgba(190, 101, 219, 0.5);
-  color:rgb(255, 255, 255);
-  border: 0;
+  background-color:rgb(255, 255, 255, 0.8);
+  color: rgb(144, 75, 181);
+  border: 3px solid rgb(144, 75, 181);
+}
+
+.dark .contact-form button:hover {
+  background-color:rgb(255, 255, 255, 0.8);
+  color: rgb(125, 74, 152);
+  border: 3px solid rgb(255, 255, 255, 0.8);
 }
 
 .contact-form input {
@@ -1235,13 +1499,20 @@ header {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  border:rgba(0, 0, 0, 0.8) solid 3px;
+  border:rgba(0, 0, 0, 0.6) solid 3px;
   background-color:rgba(255, 255, 255, 0.9);
+}
+
+.dark .contact-form input {
+  background-color:rgba(255, 255, 255, 0.7);
 }
 
 .contact-form input:focus {
   background-color:rgba(255, 255, 255, 1);
-  border:rgba(190, 101, 219, 1) solid 3px;
+}
+
+.dark .contact-form input:focus {
+  background-color:rgba(255, 255, 255, 0.9);
 }
 
 .contact-form textarea {
@@ -1257,14 +1528,22 @@ header {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  border:rgba(0, 0, 0, 0.8) solid 3px;
+  border:rgba(0, 0, 0, 0.6) solid 3px;
   background-color:rgba(255, 255, 255, 0.9);
+}
+
+.dark .contact-form textarea {
+  background-color:rgba(255, 255, 255, 0.7);
 }
 
 .contact-form textarea:focus {
   background-color:rgba(255, 255, 255, 1);
-  border:rgba(190, 101, 219, 1) solid 3px;
 }
+
+.dark .contact-form textarea:focus {
+  background-color:rgba(255, 255, 255, 0.9);
+}
+
 
 @media only screen and (max-width: 800px) {
   .contact-form textarea {
@@ -1297,6 +1576,10 @@ header {
   font-size: 22px;
 }
 
+.dark .site-made p {
+  color: rgb(192, 192, 192);
+}
+
 .site-made-icons {
   width: 90%;
   text-align: center;
@@ -1314,17 +1597,24 @@ header {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  
+}
+
+.dark .site-made-icons i {
+  color: rgb(192, 192, 192);
 }
 
 .site-made-icons i:hover {
-  color: rgb(137, 75, 157);
+  color: rgb(118, 64, 138);
 }
 
-@media only screen and (max-width: 700px) {
+.dark .site-made-icons i:hover {
+  color: rgb(156, 90, 180);
+}
+
+@media only screen and (max-width: 768px) {
   .site-made-icons i {
     max-height: 50px;
-    font-size: 4em;
+    font-size: 3.4em;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1340,6 +1630,10 @@ header {
 footer {
   background-color:rgb(80, 80, 80);
   width: 100%;
+}
+
+.dark footer {
+  background-color: rgb(17, 17, 17);
 }
 
 .footer-name p {
@@ -1370,13 +1664,21 @@ footer {
   z-index: 98;
   border: none;
   outline: none;
-  color: rgb(78, 52, 87);
+  color: rgb(150, 97, 169);
   cursor: pointer;
   padding: 0px;
   font-size: 18px;
   background-color: none;
   background: none;
-  filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
+}
+
+.dark #backButton {
+  color: rgb(201, 162, 213);
+  filter: none;
+}
+
+.dark #backButton i:hover {
+  color: rgb(244, 208, 255);
 }
   
 #backButton i {
@@ -1390,7 +1692,7 @@ footer {
 }
 
 #backButton i:hover {
-  color: rgb(21, 21, 21);
+  color: rgb(124, 124, 124);
 }
 
 .lang-eng:hover {
@@ -1400,3 +1702,94 @@ footer {
 .lang-esp:hover {
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dark-Light mode */
+
+:root,
+:root.light {
+  --bg-color: rgb(241, 241, 241);
+  --text-color: rgb(73, 73, 73);
+}
+
+:root.dark {
+  --bg-color: rgb(22, 22, 22);
+  --text-color: rgb(192, 192, 192);
+}
+
+body {
+background-color: var(--bg-color);
+color: var(--text-color);
+}
+
+.dark p {
+color: #d4d4d4;
+}
+
+
+.theme-btn {
+cursor: pointer;
+border: none;
+background-color: transparent;
+color: rgb(133, 62, 156);
+}
+
+.theme-btn.light {
+  display: none;
+  color: rgb(133, 62, 156);
+}
+
+.light .theme-btn.dark {
+  display: block;
+  color: rgb(133, 62, 156);
+}
+
+.dark .theme-btn.light {
+  display: block;
+  color: rgb(215, 161, 234);
+}
+
+.dark .theme-btn.dark {
+display: none;
+color: rgb(133, 62, 156);
+}
+
