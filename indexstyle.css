@@ -135,6 +135,30 @@ header {
   .dark .logo {
     color: rgb(212, 212, 212);
   }
+
+  .logo:hover {
+    color:rgba(0, 0, 0, 0.6);
+  }
+
+  .dark .logo:hover {
+    color: rgb(212, 212, 212);
+  }
+  
+  .logo:visited {
+    color:rgba(0, 0, 0, 0.6);
+  }
+
+  .dark .logo:visited {
+    color: rgb(212, 212, 212);
+  }
+  
+  .logo:active {
+    color:rgba(0, 0, 0, 0.6);
+  }
+  
+  .dark .logo:active {
+    color: rgb(212, 212, 212);
+  }
   
   #menutoggle {
     position: absolute;
