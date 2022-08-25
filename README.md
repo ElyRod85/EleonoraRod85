@@ -30,15 +30,21 @@ I take pride in my attention to details, being methodical, and prioritizing effi
 
 
 
-## Portfolio Features
+## 📌 Portfolio Features
 
-- Light/dark mode
-- 100% Responsive
-- Bilingual (English/Spanish)
-- Hover effects
-- Accordions
-- Contact form
-- Made in HTML, CSS, and JavaScript
+🌓 Light/dark mode
+
+💻 100% Responsive
+
+🌐 Bilingual (English/Spanish)
+
+📃 Hover effects
+
+📁 Accordions
+
+📧 Contact form
+
+📝 Made in HTML, CSS, and JavaScript
 
 
 ## 🛠 Skills
@@ -60,6 +66,6 @@ I take pride in my attention to details, being methodical, and prioritizing effi
 - Copywriting
 
 
-## 📫 Contact
+## 📬 Contact
 
 Check my [LinkedIn Profile](https://www.linkedin.com/in/EleonoraRod85/) or the contact form in [my portfolio](https://elyrod85.github.io/EleonoraRod85/)!
