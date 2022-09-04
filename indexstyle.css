@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -380,6 +381,7 @@ header {
   text-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
+
 @media only screen and (max-width: 768px) {
   .hero-text h1 {
     font-size: 68px;
@@ -480,8 +482,8 @@ header {
 
 .flex-container .about .about-text p {
   font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   line-height: 1.8;
   letter-spacing: 1px;
   word-spacing: 4px;
@@ -491,8 +493,8 @@ header {
 
 .flex-container .about .about-text a {
   font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   line-height: 1.8;
   letter-spacing: 1px;
   word-spacing: 4px;
@@ -500,6 +502,7 @@ header {
   font-family: 'Roboto', sans-serif;
   color: rgb(103, 51, 121);
 }
+
 
 .flex-container .about .about-text a:hover {
   color: rgb(131, 84, 169);
@@ -517,20 +520,6 @@ header {
   color: rgb(192, 192, 192);
 }
 
-/*
-@media only screen and (max-width: 768px) {
-  .flex-container .about {
-    flex-basis: 100%;
-    flex-flow: column wrap;
-  }
-
-  .flex-container .about .about-photo img {
-    max-width: 70%;
-    flex-basis: 100%;
-    max-height: auto;
-  }
-}
-*/
 
 @media only screen and (max-width: 1100px) {
 .flex-container {
@@ -764,7 +753,7 @@ header {
 }
 
 .dark .skills-card-logo {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.15);
 }
 
 @media only screen and (max-width: 700px) {
@@ -800,30 +789,32 @@ header {
 }
 
 .dark .skills-card-logo:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
+
 
 .skills-card-logo .def {
   order: 2;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 20px;
   color: rgb(116, 116, 116);
   text-align: center;
   justify-content: center;
 }
 
 .skills-card-logo .def p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 14px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 20px;
   color: rgb(116, 116, 116);
   text-align: center;
   justify-content: center;
 }
+
 
 .dark .skills-card-logo .def {
   color: rgb(192, 192, 192);
@@ -1943,6 +1934,14 @@ color: rgb(133, 62, 156);
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+
+}
+
+.sample-title p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 
 }
 
