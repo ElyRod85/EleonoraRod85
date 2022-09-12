@@ -454,7 +454,7 @@ header {
   filter: sepia(40%) saturate(120%);
   -webkit-filter: sepia(40%) saturate(120%);
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  transition: 500ms;
 }
 
 .dark .flex-container .about .about-photo img {
@@ -463,16 +463,18 @@ header {
 
 .flex-container .about .about-photo img:hover {
   box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
+  filter: saturate(100%);
+  -webkit-filter: saturate(100%);
+  transition: 500ms;
 }
 
 .dark .flex-container .about .about-photo img:hover {
   box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2);
-}
-
-.flex-container .about .about-photo img:hover {
   filter: saturate(100%);
   -webkit-filter: saturate(100%);
+  transition: 500ms;
 }
+
 
 .flex-container .about .about-text {
   flex-basis: 64%;
@@ -500,12 +502,12 @@ header {
   word-spacing: 4px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
-  color: rgb(103, 51, 121);
+  color: rgb(151, 70, 178);
 }
 
 
 .flex-container .about .about-text a:hover {
-  color: rgb(131, 84, 169);
+  color: rgb(139, 48, 169);
 }
 
 .dark .flex-container .about .about-text a {
@@ -519,6 +521,8 @@ header {
 .dark .flex-container .about .about-text p {
   color: rgb(192, 192, 192);
 }
+
+
 
 
 @media only screen and (max-width: 1100px) {
@@ -872,9 +876,41 @@ header {
 
 /* Education */
 
-.frontend {
+.projectm {
   order: 1;
-  flex-basis: 48%;
+  flex-basis: 31%;
+  display: flex;
+  padding: 0;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.dark .projectm {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(32, 30, 34);
+}
+
+.projectm .projectm-text {
+  color: rgb(73, 73, 73);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+
+  
+}
+
+.dark .projectm .projectm-text {
+  color: rgb(192, 192, 192);
+}
+
+
+.frontend {
+  order: 2;
+  flex-basis: 31%;
   display: flex;
   padding: 0;
   margin-top: 10px;
@@ -894,6 +930,7 @@ header {
   letter-spacing: 1px;
   width: 100%;
   padding: 20px;
+  text-align: center;
 }
 
 .dark .frontend .frontend-text {
@@ -901,8 +938,8 @@ header {
 }
 
 .tea {
-  order: 1;
-  flex-basis: 48%;
+  order: 3;
+  flex-basis: 31%;
   display: flex;
   padding: 0;
   margin-top: 10px;
@@ -922,11 +959,32 @@ header {
   letter-spacing: 1px;
   width: 100%;
   padding: 20px;
+  text-align: center;
 }
 
 .dark .tea .tea-text {
   color: rgb(192, 192, 192);
 }
+
+.tea-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.tea-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+
+.dark .tea-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .tea-text a:hover {
+  color: rgb(240, 198, 255);
+}
+
 
 .study-year {
   font-size: 16px;
@@ -960,6 +1018,14 @@ header {
   color: rgb(192, 192, 192);
 }
 
+.projectm:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dark .projectm:hover { 
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .frontend:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -977,10 +1043,17 @@ header {
 }
 
 
+
 @media only screen and (max-width: 800px) {
-  .frontend {
+  .projectm {
     width: 100%;
     margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .frontend {
+    width: 100%;
+    margin-top: 20px;
     margin-bottom: 10px;
   }
   
@@ -1036,8 +1109,14 @@ header {
 }
 
 .dark .study-logos img {
-  filter: drop-shadow(0 0 10px rgb(236, 195, 255));
-  -webkit-filter: drop-shadow(0 0 10px rgb(236, 195, 255));
+  filter: drop-shadow(0 0 8px rgb(236, 195, 255));
+  -webkit-filter: drop-shadow(0 0 8px rgb(236, 195, 255));
+}
+
+.dark .study-logos img:hover {
+  filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+  -webkit-filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+  transition: 500ms;
 }
 
 .card1 details {
@@ -1953,6 +2032,27 @@ color: rgb(133, 62, 156);
   max-width: 100%;
   padding: 0;
   margin: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+  .samples-box1 {
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .samples-box2 {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .samples-box3 {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
