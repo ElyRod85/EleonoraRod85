@@ -332,9 +332,10 @@ header {
 
 /* Hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(18, 12, 24, 0.6),rgba(0, 0, 0, 0.8)), url("./images/hero-img.jpg");
+  background-image: linear-gradient(rgba(18, 12, 24, 0.6),rgba(0, 0, 0, 0.7)), url("./images/hero-img.jpg");
   height: 700px;
   width: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -783,7 +784,7 @@ header {
   .skills-card-logo img {
     max-width: 120px;
     max-height: 120px;
-    padding-top: 20px;
+    padding-top: 30px;
     margin: auto;
   }
 
@@ -871,6 +872,9 @@ header {
 .skills-card-logo .skill14 {
   order: 14;
 }
+.skills-card-logo .skill15 {
+  order: 15;
+}
 
 
 
@@ -900,12 +904,30 @@ header {
   width: 100%;
   padding: 20px;
   text-align: center;
-
-  
 }
 
 .dark .projectm .projectm-text {
   color: rgb(192, 192, 192);
+}
+
+
+.projectm-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.projectm-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+
+.dark .projectm-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .projectm-text a:hover {
+  color: rgb(240, 198, 255);
 }
 
 
@@ -1044,6 +1066,35 @@ header {
 }
 
 
+.study-logos2 {
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.study-logos2 img {
+  max-width: 200px;
+  max-height: 100px;
+  padding: 20px;
+}
+
+.dark .study-logos2 img {
+  filter: drop-shadow(0 0 8px rgb(241, 211, 255));
+  -webkit-filter: drop-shadow(0 0 8px rgb(241, 211, 255));
+  transition: 500ms;
+}
+
+.dark .study-logos2 img:hover {
+  filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+  -webkit-filter: drop-shadow(0 0 2px rgb(255, 255, 255));
+  transition: 500ms;
+}
+
+
 
 @media only screen and (max-width: 800px) {
   .projectm {
@@ -1110,8 +1161,9 @@ header {
 }
 
 .dark .study-logos img {
-  filter: drop-shadow(0 0 8px rgb(236, 195, 255));
-  -webkit-filter: drop-shadow(0 0 8px rgb(236, 195, 255));
+  filter: drop-shadow(0 0 8px rgb(241, 211, 255));
+  -webkit-filter: drop-shadow(0 0 8px rgb(241, 211, 255));
+  transition: 500ms;
 }
 
 .dark .study-logos img:hover {
@@ -1919,6 +1971,18 @@ color: rgb(133, 62, 156);
 /* Samples section */
 #samples {
   margin-bottom: 20px;
+}
+
+.samples-text {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+}
+
+.samples-text p {
+  text-align: center;
 }
 
 .samples-box1 {
