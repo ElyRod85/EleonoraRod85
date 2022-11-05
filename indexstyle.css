@@ -332,7 +332,7 @@ header {
 
 /* Hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(18, 12, 24, 0.6),rgba(0, 0, 0, 0.7)), url("./images/hero-img.jpg");
+  background-image: linear-gradient(rgba(18, 12, 24, 0.5),rgb(22, 22, 22, 0.8)), url("./images/hero-img2.jpg");
   height: 700px;
   width: 100%;
   background-attachment: fixed;
@@ -346,7 +346,7 @@ header {
 
 
 .dark .hero-image {
-  background-image: linear-gradient(rgba(22, 22, 22, 0.7),rgba(22, 22, 22, 1)), url("./images/hero-img.jpg");
+  background-image: linear-gradient(rgba(22, 22, 22, 0.5),rgba(22, 22, 22, 1)), url("./images/hero-img2.jpg");
 }
 
 .hero-text {
@@ -373,14 +373,22 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 800;
   font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: 2px;
   font-size: 24px;
   padding: 15px 30px;
-  color:rgb(238, 238, 238);
-  border:rgba(255, 255, 255, 0.6) dashed 2px;
-  text-shadow: 0 0 20px rgb(255, 255, 255);
+  background-color:rgb(238, 238, 238, 0.8);
+  transition: 500ms;
+}
+
+.hero-text p:hover {
+  background-color:rgb(238, 238, 238);
+  transition: 500ms;
+}
+
+.dark .hero-text p {
+  color: rgb(73, 73, 73);
 }
 
 
@@ -459,21 +467,22 @@ header {
   transition: 500ms;
 }
 
-.dark .flex-container .about .about-photo img {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
-}
-
 .flex-container .about .about-photo img:hover {
   box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
-  filter: saturate(100%);
-  -webkit-filter: saturate(100%);
+  filter: sepia(0%) saturate(100%);
+  -webkit-filter: sepia(0%) saturate(100%);
+  transition: 500ms;
+}
+
+.dark .flex-container .about .about-photo img {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
   transition: 500ms;
 }
 
 .dark .flex-container .about .about-photo img:hover {
   box-shadow: 0 0 40px 0 rgba(255, 255, 255, 0.2);
-  filter: saturate(100%);
-  -webkit-filter: saturate(100%);
+  filter: sepia(0%) saturate(100%);
+  -webkit-filter: sepia(0%) saturate(100%);
   transition: 500ms;
 }
 
@@ -567,7 +576,7 @@ header {
 }
 
 .flex-container .about .about-photo img {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .flex-container .about .about-text {
@@ -887,14 +896,8 @@ header {
   display: flex;
   padding: 0;
   margin-top: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 10px;
-}
-
-.dark .projectm {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(32, 30, 34);
 }
 
 .projectm .projectm-text {
@@ -910,7 +913,6 @@ header {
   color: rgb(192, 192, 192);
 }
 
-
 .projectm-text a {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
@@ -920,7 +922,6 @@ header {
 .projectm-text a:hover {
   color: rgb(139, 48, 169);
 }
-
 
 .dark .projectm-text a {
   color: rgb(215, 161, 234);
@@ -937,14 +938,8 @@ header {
   display: flex;
   padding: 0;
   margin-top: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 10px;
-}
-
-.dark .frontend {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(32, 30, 34);
 }
 
 .frontend .frontend-text {
@@ -966,14 +961,8 @@ header {
   display: flex;
   padding: 0;
   margin-top: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 10px;
-}
-
-.dark .tea {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(32, 30, 34);
 }
 
 .tea .tea-text {
@@ -1040,31 +1029,6 @@ header {
 .dark .study-degree {
   color: rgb(192, 192, 192);
 }
-
-.projectm:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.dark .projectm:hover { 
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.frontend:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.dark .frontend:hover { 
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.tea:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.dark .tea:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 
 .study-logos2 {
   text-align: center;
@@ -1443,13 +1407,8 @@ header {
   display: flex;
   padding: 0;
   margin-top: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 10px;
-}
-
-.dark .exp-wordpress {
-  background-color: rgb(32, 30, 34);
 }
 
 .exp-wordpress .exp-wp-text {
@@ -1470,13 +1429,8 @@ header {
   display: flex;
   padding: 0;
   margin-top: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 10px;
-}
-
-.dark .exp-translator {
-  background-color: rgb(32, 30, 34);
 }
 
 .exp-tr-text {
@@ -1581,13 +1535,6 @@ header {
   color: rgb(192, 192, 192);
 }
 
-.exp-wordpress:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.exp-translator:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
 @media only screen and (max-width: 800px) {
   .exp-wordpress {
@@ -1678,18 +1625,21 @@ header {
   background-color: rgb(133, 62, 156);
   color:rgb(255, 255, 255);
   border: 3px solid rgb(133, 62, 156);
+  transition: 500ms;
 }
 
 .contact-form button:hover {
   background-color:rgb(255, 255, 255, 0.8);
   color: rgb(133, 62, 156);
   border: 3px solid rgb(133, 62, 156);
+  transition: 500ms;
 }
 
 .dark .contact-form button:hover {
   background-color:rgb(255, 255, 255, 0.8);
   color: rgb(133, 62, 156);
   border: 3px solid rgb(255, 255, 255, 0.8);
+  transition: 500ms;
 }
 
 .contact-form input {
@@ -1803,6 +1753,7 @@ header {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  transition: 500ms;
 }
 
 .dark .site-made-icons i {
@@ -1811,10 +1762,12 @@ header {
 
 .site-made-icons i:hover {
   color: rgb(118, 64, 138);
+  transition: 500ms;
 }
 
 .dark .site-made-icons i:hover {
   color: rgb(156, 90, 180);
+  transition: 500ms;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1895,10 +1848,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 500ms;
 }
 
 #backButton i:hover {
   color: rgb(124, 124, 124);
+  transition: 500ms;
 }
 
 .lang-eng:hover {
@@ -2156,7 +2111,7 @@ color: rgb(133, 62, 156);
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-
+  transition: 500ms;
 }
 
 @media only screen and (max-width: 700px) {
@@ -2182,6 +2137,7 @@ color: rgb(133, 62, 156);
   background-color: rgb(133, 62, 156);
   color:rgb(235, 235, 235);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 500ms;
 }
 
 .sample-buttons button:active {
@@ -2203,6 +2159,7 @@ color: rgb(133, 62, 156);
   color: rgb(133, 62, 156);
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 500ms;
 }
 
 .dark .sample-buttons button:hover {
