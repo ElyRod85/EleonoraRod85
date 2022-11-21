@@ -41,6 +41,24 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
+mark {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgb(224, 193, 235) 50%);
+  color: rgb(73, 73, 73);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  line-height: 1.5;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.dark mark {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgb(59, 38, 68) 50%);
+  color: rgb(213, 213, 213);
+}
+
+
 p {
   font-size: 18px;
   margin-top: 10px;
@@ -53,6 +71,10 @@ p {
 
 .dark p {
   color: rgb(192, 192, 192);
+}
+
+.dark strong {
+  color: rgb(228, 228, 228);
 }
 
 h5 {
@@ -332,7 +354,7 @@ header {
 
 /* Hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(18, 12, 24, 0.5),rgb(22, 22, 22, 0.8)), url("./images/hero-img2.jpg");
+  background-image: linear-gradient(rgba(28, 5, 54, 0.5),rgb(22, 22, 22, 0.8)), url("./images/hero-img2.jpg");
   height: 700px;
   width: 100%;
   background-attachment: fixed;
@@ -346,7 +368,7 @@ header {
 
 
 .dark .hero-image {
-  background-image: linear-gradient(rgba(22, 22, 22, 0.5),rgba(22, 22, 22, 1)), url("./images/hero-img2.jpg");
+  background-image: linear-gradient(rgba(28, 5, 54, 0.5),rgba(22, 22, 22, 1)), url("./images/hero-img2.jpg");
 }
 
 .hero-text {
@@ -998,6 +1020,26 @@ header {
 }
 
 
+.frontend-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.frontend-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+
+.dark .frontend-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .frontend-text a:hover {
+  color: rgb(240, 198, 255);
+}
+
+
 .study-year {
   font-size: 16px;
   color: rgb(115, 115, 115);
@@ -1564,7 +1606,7 @@ header {
 /* Contact form */
 
 .contact-form {
-  background-image: linear-gradient(rgba(24, 15, 26, 0.6),rgba(24, 15, 26, 0.8)), url("./images/contact.jpg");
+  background-image: linear-gradient(rgba(17, 1, 36, 0.6),rgba(24, 15, 26, 0.8)), url("./images/contact.jpg");
   width: 100%;
   max-height: 900px;
   background-position: center;
@@ -1581,7 +1623,7 @@ header {
 }
 
 .dark .contact-form {
-  background-image: linear-gradient(rgba(22, 22, 22, 0.6),rgba(22, 22, 22, 1)), url("./images/contact.jpg");
+  background-image: linear-gradient(rgba(17, 1, 36, 0.6),rgba(22, 22, 22, 1)), url("./images/contact.jpg");
 }
 
 .contact-form h1 {
@@ -1596,7 +1638,7 @@ header {
 }
 
 .dark .contact-form h1 {
-  color: rgb(220, 220, 220);
+  color: rgb(255, 255, 255);
 }
 
 .contact-form label {
@@ -1611,7 +1653,7 @@ header {
 }
 
 .dark .contact-form label {
-  color: rgb(220, 220, 220);
+  color: rgb(255, 255, 255);
 }
 
 .contact-form button {
