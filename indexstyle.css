@@ -918,6 +918,10 @@ header {
   text-align: center;
 }
 
+.share-title {
+  margin-bottom: 30px;
+}
+
 .facebook {
   margin-left: auto;
   margin-right: auto;
