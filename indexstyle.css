@@ -648,7 +648,6 @@ header {
 
 .what-contents {
   width: 90%;
-  
 }
 
 .what-contents ul {
@@ -910,14 +909,213 @@ header {
 
 
 
+/* Share buttons */
+#share-buttons {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.facebook {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 50px;
+  color: #4267B2;
+  transition: 500ms;
+}
+
+.facebook:hover {
+  color: rgb(118, 64, 138);
+  transition: 500ms;
+}
+
+.twitter {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 50px;
+  color: #00acee;
+  transition: 500ms;
+}
+
+.twitter:hover {
+  color: rgb(118, 64, 138);
+  transition: 500ms;
+}
+
+.linkedin {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 50px;
+  color: #0072b1;
+  transition: 500ms;
+}
+
+.linkedin:hover {
+  color: rgb(118, 64, 138);
+  transition: 500ms;
+}
+
+.whatsapp {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 50px;
+  color: #25D366;
+  transition: 500ms;
+}
+
+.whatsapp:hover {
+  color: rgb(118, 64, 138);
+  transition: 500ms;
+}
+
+.sendemail {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 50px;
+  transition: 500ms;
+  color: rgb(73, 73, 73);
+}
+
+.dark .sendemail {
+  color: rgb(192, 192, 192);
+}
+
+.sendemail:hover {
+  color: rgb(118, 64, 138);
+  transition: 500ms;
+}
+
+.dark #share-buttons a:hover {
+  color: rgb(166, 110, 186);
+}
+
+
+
+
 /* Education */
+
+.flex-container-edu {
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .flex-container-edu {
+    max-width: 100%;
+    flex-flow: column wrap;
+    gap: 5px 5px;
+  }
+}
+
+
+.cloud {
+  order: 1;
+  flex-basis: 36%;
+  display: flex;
+  padding: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.cloud .cloud-text {
+  color: rgb(73, 73, 73);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark .cloud .cloud-text {
+  color: rgb(192, 192, 192);
+}
+
+.cloud-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.cloud-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+.dark .cloud-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .cloud-text a:hover {
+  color: rgb(240, 198, 255);
+}
+
+
+
+.frontend {
+  order: 2;
+  flex-basis: 36%;
+  display: flex;
+  padding: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.frontend .frontend-text {
+  color: rgb(73, 73, 73);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark .frontend .frontend-text {
+  color: rgb(192, 192, 192);
+}
+
+
+.frontend-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.frontend-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+
+.dark .frontend-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .frontend-text a:hover {
+  color: rgb(240, 198, 255);
+}
+
+
+
 
 .projectm {
   order: 1;
-  flex-basis: 31%;
+  flex-basis: 36%;
   display: flex;
   padding: 0;
-  margin-top: 10px;
   transition: 0.3s;
   border-radius: 10px;
 }
@@ -954,35 +1152,12 @@ header {
 }
 
 
-.frontend {
-  order: 2;
-  flex-basis: 31%;
-  display: flex;
-  padding: 0;
-  margin-top: 10px;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
-.frontend .frontend-text {
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-.dark .frontend .frontend-text {
-  color: rgb(192, 192, 192);
-}
 
 .tea {
-  order: 3;
-  flex-basis: 31%;
+  order: 2;
+  flex-basis: 36%;
   display: flex;
   padding: 0;
-  margin-top: 10px;
   transition: 0.3s;
   border-radius: 10px;
 }
@@ -1019,25 +1194,6 @@ header {
   color: rgb(240, 198, 255);
 }
 
-
-.frontend-text a {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(151, 70, 178);
-}
-
-.frontend-text a:hover {
-  color: rgb(139, 48, 169);
-}
-
-
-.dark .frontend-text a {
-  color: rgb(215, 161, 234);
-}
-
-.dark .frontend-text a:hover {
-  color: rgb(240, 198, 255);
-}
 
 
 .study-year {
@@ -1102,21 +1258,45 @@ header {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+  .cloud {
+    flex-basis: 47%;
+  }
+
+  .frontend {
+    flex-basis: 47%;
+  }
+  
   .projectm {
-    width: 100%;
+    flex-basis: 47%;
+  }
+
+  .tea {
+    flex-basis: 47%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cloud {
+    flex-basis: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
   }
 
   .frontend {
-    width: 100%;
+    flex-basis: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
   }
   
+  .projectm {
+    flex-basis: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
   .tea {
-    width: 100%;
+    flex-basis: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
   }
