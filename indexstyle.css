@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -34,9 +35,9 @@ p, h1, h2, h3, h4, h5 {
 h1, h2, h3, h4, h5 {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.5;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Rubik', sans-serif;
   letter-spacing: 0;
   text-align: center;
 }
@@ -48,7 +49,7 @@ mark {
   margin-bottom: 10px;
   font-weight: 900;
   line-height: 1.5;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Rubik', sans-serif;
   letter-spacing: 0;
   text-align: center;
 }
@@ -78,19 +79,19 @@ p {
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 h4 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 h1 {
@@ -196,9 +197,9 @@ header {
     background-color: rgb(133, 62, 156);
     color: rgb(241, 241, 241);
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 4px;
   }
 
@@ -218,7 +219,7 @@ header {
   transition: 0.5s;
   width: 0px;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
@@ -255,12 +256,12 @@ header {
   display: inline-block;
   padding: 0 15px;
   color: rgb(133, 62, 156);
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
   }
 
   #navbar button {
@@ -307,11 +308,13 @@ header {
   justify-content: center;
   align-items: center;
   }
+
   #navbar.active {
   height: calc(100vh - 80px);
   bottom: 0;
   width: 100%;
   }
+
   #navbar ul {
   flex-direction: column;
   justify-content: center;
@@ -320,8 +323,8 @@ header {
   }
   
   #navbar ul li a {
-  font-size: 26px;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 700;
   padding: 0;
   }
   
@@ -341,7 +344,7 @@ header {
   
 @media (max-width: 768px) {
   #navbar ul li a {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
     padding: 0;
     height: 50px;
@@ -395,10 +398,10 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: 800;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  letter-spacing: 2px;
-  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1px;
+  font-size: 22px;
   padding: 15px 30px;
   background-color:rgb(238, 238, 238, 0.8);
   transition: 500ms;
@@ -416,11 +419,11 @@ header {
 
 @media only screen and (max-width: 768px) {
   .hero-text h1 {
-    font-size: 68px;
+    font-size: 64px;
   }
 
   .hero-text p {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -912,7 +915,7 @@ header {
 /* Share buttons */
 #share-buttons {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
   padding-bottom: 10px;
   text-align: center;
@@ -1790,7 +1793,6 @@ header {
 /* Contact form */
 
 .contact-form {
-  background-image: linear-gradient(rgba(17, 1, 36, 0.6),rgba(24, 15, 26, 0.8)), url("./images/contact.jpg");
   width: 100%;
   max-height: 900px;
   background-position: center;
@@ -1801,43 +1803,28 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  margin-top: 30px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
-.dark .contact-form {
-  background-image: linear-gradient(rgba(17, 1, 36, 0.6),rgba(22, 22, 22, 1)), url("./images/contact.jpg");
-}
-
-.contact-form h1 {
-  font-family: 'Style Script', cursive;
-  font-size: 60px;
-  text-shadow: 0 0 50px rgb(255, 255, 255);
-  color:rgb(238, 238, 238);
-  letter-spacing: 0;
-  font-weight: 400;
-  line-height: 100%;
-  margin-bottom: 50px;
-}
-
-.dark .contact-form h1 {
-  color: rgb(255, 255, 255);
+.contact-form form {
+  margin-top: 50px;
 }
 
 .contact-form label {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.5;
-  color:rgb(238, 238, 238);
+  color: rgb(73, 73, 73);
   font-weight: 900;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  letter-spacing: 2px;
-  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .dark .contact-form label {
-  color: rgb(255, 255, 255);
+  color: rgb(192, 192, 192);
 }
 
 .contact-form button {
@@ -1846,20 +1833,24 @@ header {
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 50px;
-  font-size: 22px;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  padding: 15px 15px;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  padding: 15px 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  width: 150px;
+  letter-spacing: 2px;
+  
   background-color: rgb(133, 62, 156);
   color:rgb(255, 255, 255);
   border: 3px solid rgb(133, 62, 156);
   transition: 500ms;
+}
+
+.contact-form button i {
+  padding-left: 15px;
 }
 
 .contact-form button:hover {
@@ -1870,9 +1861,9 @@ header {
 }
 
 .dark .contact-form button:hover {
-  background-color:rgb(255, 255, 255, 0.8);
-  color: rgb(133, 62, 156);
-  border: 3px solid rgb(255, 255, 255, 0.8);
+  background-color: rgb(22, 22, 22);
+  color: rgb(239, 190, 255);
+  border: 3px solid rgb(133, 62, 156);
   transition: 500ms;
 }
 
@@ -1894,7 +1885,7 @@ header {
 }
 
 .dark .contact-form input {
-  background-color:rgba(255, 255, 255, 0.7);
+  background-color:rgba(255, 255, 255, 0.8);
 }
 
 .contact-form input:focus {
@@ -1923,7 +1914,7 @@ header {
 }
 
 .dark .contact-form textarea {
-  background-color:rgba(255, 255, 255, 0.7);
+  background-color:rgba(255, 255, 255, 0.8);
 }
 
 .contact-form textarea:focus {
@@ -1952,8 +1943,8 @@ header {
 .site-made {
   width: 90%;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 70px;
 }
 
 .site-made p {
@@ -1961,7 +1952,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: 'Rubik', sans-serif;
   letter-spacing: 2px;
   font-size: 22px;
 }
@@ -2031,9 +2022,9 @@ footer {
 
 .footer-name p {
   font-weight: 400;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  letter-spacing: 2px;
-  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
   color:rgb(255, 255, 255);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2361,10 +2352,10 @@ color: rgb(133, 62, 156);
 .sample-buttons button {
   padding: 15px 30px;
   text-decoration: none;
-  font-weight: 800;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 22px;
-  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
   text-transform: capitalize;
   border-radius: 15px;
   border: 3px solid rgb(133, 62, 156);
