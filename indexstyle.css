@@ -50,7 +50,7 @@ mark {
   font-weight: 900;
   line-height: 1.5;
   font-family: 'Rubik', sans-serif;
-  letter-spacing: 0;
+  letter-spacing: -1px;
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.8;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   word-spacing: 4px;
   font-family: 'Roboto', sans-serif;
 }
@@ -400,7 +400,7 @@ header {
   line-height: 1.5;
   font-weight: 700;
   font-family: 'Rubik', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   font-size: 22px;
   padding: 15px 30px;
   background-color:rgb(238, 238, 238, 0.8);
@@ -523,8 +523,8 @@ header {
   margin-top: 12px;
   margin-bottom: 12px;
   line-height: 1.8;
-  letter-spacing: 1px;
-  word-spacing: 4px;
+  letter-spacing: 0;
+  word-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   color: rgb(73, 73, 73);
 }
@@ -534,8 +534,8 @@ header {
   margin-top: 12px;
   margin-bottom: 12px;
   line-height: 1.8;
-  letter-spacing: 1px;
-  word-spacing: 4px;
+  letter-spacing: 0;
+  word-spacing: 2px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   color: rgb(151, 70, 178);
@@ -635,8 +635,8 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.8;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+    letter-spacing: 0;
+    word-spacing: 2px;
     font-family: 'Roboto', sans-serif;
     color: rgb(73, 73, 73);
 }
@@ -1031,9 +1031,52 @@ header {
 }
 
 
-.cloud {
+.data {
   order: 1;
-  flex-basis: 36%;
+  flex-basis: 30%;
+  display: flex;
+  padding: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+
+.data .data-text {
+  color: rgb(73, 73, 73);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark .data .data-text {
+  color: rgb(192, 192, 192);
+}
+
+.data-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.data-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+.dark .data-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .data-text a:hover {
+  color: rgb(240, 198, 255);
+}
+
+
+
+.cloud {
+  order: 2;
+  flex-basis: 30%;
   display: flex;
   padding: 0;
   transition: 0.3s;
@@ -1074,8 +1117,8 @@ header {
 
 
 .frontend {
-  order: 2;
-  flex-basis: 36%;
+  order: 3;
+  flex-basis: 30%;
   display: flex;
   padding: 0;
   transition: 0.3s;
@@ -1120,7 +1163,7 @@ header {
 
 .projectm {
   order: 1;
-  flex-basis: 36%;
+  flex-basis: 34%;
   display: flex;
   padding: 0;
   transition: 0.3s;
@@ -1162,7 +1205,7 @@ header {
 
 .tea {
   order: 2;
-  flex-basis: 36%;
+  flex-basis: 34%;
   display: flex;
   padding: 0;
   transition: 0.3s;
@@ -1266,6 +1309,10 @@ header {
 
 
 @media only screen and (max-width: 1200px) {
+  .data {
+    flex-basis: 47%;
+  }
+
   .cloud {
     flex-basis: 47%;
   }
@@ -1284,6 +1331,12 @@ header {
 }
 
 @media only screen and (max-width: 800px) {
+  .data {
+    flex-basis: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
   .cloud {
     flex-basis: 100%;
     margin-top: 5px;
@@ -1600,7 +1653,7 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.8;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   word-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   color: rgb(73, 73, 73);
@@ -1616,7 +1669,7 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 1.8;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   word-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   color: rgb(73, 73, 73);
@@ -1678,7 +1731,7 @@ header {
 .exp-tr-text li {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   font-size: 18px;
 }
 
@@ -1702,7 +1755,7 @@ header {
 .exp-wp-text li {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   font-size: 18px;
 }
 
@@ -1751,7 +1804,7 @@ header {
 .exp-desc {
   color: rgb(73, 73, 73);
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   max-width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -1819,7 +1872,7 @@ header {
   color: rgb(73, 73, 73);
   font-weight: 900;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   font-size: 20px;
 }
 
