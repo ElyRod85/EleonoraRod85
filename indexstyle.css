@@ -55,10 +55,9 @@ mark {
 }
 
 .dark mark {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgb(59, 38, 68) 50%);
-  color: rgb(213, 213, 213);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgb(61, 39, 70) 50%);
+  color: rgb(225, 225, 225);
 }
-
 
 p {
   font-size: 18px;
@@ -490,6 +489,7 @@ header {
   -webkit-filter: sepia(40%) saturate(120%);
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
   transition: 500ms;
+  border: 3px solid rgba(0,0,0,0.2);
 }
 
 .flex-container .about .about-photo img:hover {
@@ -502,6 +502,7 @@ header {
 .dark .flex-container .about .about-photo img {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.2);
   transition: 500ms;
+  border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .dark .flex-container .about .about-photo img:hover {
@@ -766,7 +767,7 @@ header {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  gap: 10px 10px;
+  gap: 5px 5px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -777,30 +778,18 @@ header {
 }
 
 .skills-card-logo {
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  border-radius: 15px;
   width: 130px;
   height: 170px;
   display: flex;
   flex-direction: column;
-  margin: 10px;
-}
-
-.dark .skills-card-logo {
-  background-color: rgb(32, 30, 34);
-}
-
-.dark .skills-card-logo {
-  box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.15);
+  margin: 5px;
 }
 
 @media only screen and (max-width: 700px) {
   .skills-card-logo {
     max-width: 100%;
     flex-flow: column;
-    margin-top: 5px;
-    margin-bottom: 15px;
   }
 
 }
@@ -809,26 +798,16 @@ header {
   order: 1;
   max-width: 90px;
   max-height: 90px;
-  padding-top: 20px;
+  padding: 0;
   margin: auto;
 }
 
 @media only screen and (max-width: 700px) {
   .skills-card-logo img {
-    max-width: 120px;
-    max-height: 120px;
-    padding-top: 30px;
-    margin: auto;
+    max-width: 80px;
+    max-height: 80px;
   }
 
-}
-
-.skills-card-logo:hover {
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-}
-
-.dark .skills-card-logo:hover {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 
@@ -842,6 +821,7 @@ header {
   color: rgb(116, 116, 116);
   text-align: center;
   justify-content: center;
+
 }
 
 .skills-card-logo .def p {
@@ -849,18 +829,21 @@ header {
   font-weight: 400;
   letter-spacing: 0;
   font-size: 20px;
-  color: rgb(116, 116, 116);
+  color: rgb(241, 241, 241);
   text-align: center;
   justify-content: center;
+  margin-top: 0;
+  padding-top: 0;
+  border-radius: 10px;
+  background-color: rgb(104, 104, 104);
+  border: 1px solid rgb(104, 104, 104);
+  transition: 500ms;
 }
 
-
-.dark .skills-card-logo .def {
-  color: rgb(192, 192, 192);
-}
-
-.dark .skills-card-logo .def p {
-  color: rgb(192, 192, 192);
+.skills-card-logo .def p:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(104, 104, 104);
+  transition: 500ms;
 }
 
 .skills-card-logo .skill1 {
@@ -907,6 +890,10 @@ header {
 }
 .skills-card-logo .skill15 {
   order: 15;
+}
+
+.skills-card-logo .skill16 {
+  order: 16;
 }
 
 
