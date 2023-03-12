@@ -101,7 +101,7 @@ main {
   max-width: 95%;
   margin: auto;
   padding-top: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 
 @media only screen and (max-width: 700px) {
@@ -922,7 +922,7 @@ header {
 }
 
 .facebook:hover {
-  color: rgb(118, 64, 138);
+  color: rgb(146, 80, 170);
   transition: 500ms;
 }
 
@@ -936,7 +936,7 @@ header {
 }
 
 .twitter:hover {
-  color: rgb(118, 64, 138);
+  color: rgb(146, 80, 170);
   transition: 500ms;
 }
 
@@ -950,7 +950,7 @@ header {
 }
 
 .linkedin:hover {
-  color: rgb(118, 64, 138);
+  color: rgb(146, 80, 170);
   transition: 500ms;
 }
 
@@ -964,7 +964,7 @@ header {
 }
 
 .whatsapp:hover {
-  color: rgb(118, 64, 138);
+  color: rgb(146, 80, 170);
   transition: 500ms;
 }
 
@@ -982,7 +982,7 @@ header {
 }
 
 .sendemail:hover {
-  color: rgb(118, 64, 138);
+  color: rgb(146, 80, 170);
   transition: 500ms;
 }
 
@@ -1018,8 +1018,52 @@ header {
 }
 
 
-.data {
+.frontend {
   order: 1;
+  flex-basis: 30%;
+  display: flex;
+  padding: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.frontend .frontend-text {
+  color: rgb(73, 73, 73);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark .frontend .frontend-text {
+  color: rgb(192, 192, 192);
+}
+
+
+.frontend-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.frontend-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+
+.dark .frontend-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .frontend-text a:hover {
+  color: rgb(240, 198, 255);
+}
+
+
+
+.data {
+  order: 2;
   flex-basis: 30%;
   display: flex;
   padding: 0;
@@ -1062,7 +1106,7 @@ header {
 
 
 .cloud {
-  order: 2;
+  order: 3;
   flex-basis: 30%;
   display: flex;
   padding: 0;
@@ -1101,49 +1145,6 @@ header {
   color: rgb(240, 198, 255);
 }
 
-
-
-.frontend {
-  order: 3;
-  flex-basis: 30%;
-  display: flex;
-  padding: 0;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
-.frontend .frontend-text {
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-.dark .frontend .frontend-text {
-  color: rgb(192, 192, 192);
-}
-
-
-.frontend-text a {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(151, 70, 178);
-}
-
-.frontend-text a:hover {
-  color: rgb(139, 48, 169);
-}
-
-
-.dark .frontend-text a {
-  color: rgb(215, 161, 234);
-}
-
-.dark .frontend-text a:hover {
-  color: rgb(240, 198, 255);
-}
 
 
 
@@ -1834,16 +1835,11 @@ header {
 
 .contact-form {
   width: 100%;
-  max-height: 900px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  margin-top: 5px;
+  margin-top: 0;
   padding-bottom: 10px;
   padding-top: 5px;
 }
@@ -1964,6 +1960,58 @@ header {
 .dark .contact-form textarea:focus {
   background-color:rgba(255, 255, 255, 0.9);
 }
+
+.contact-form .contact-text {
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  letter-spacing: 0;
+  word-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(73, 73, 73);
+}
+
+.contact-form .contact-text p {
+  font-size: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 1.8;
+  letter-spacing: 0;
+  word-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(73, 73, 73);
+}
+
+.contact-form .contact-text a {
+  font-size: 20px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 1.8;
+  letter-spacing: 0;
+  word-spacing: 2px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+
+.contact-form .contact-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+.dark .contact-form .contact-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .contact-form .contact-text a:hover {
+  color: rgb(240, 198, 255);
+}
+
+.dark .contact-form .contact-text p {
+  color: rgb(192, 192, 192);
+}
+
 
 
 @media only screen and (max-width: 800px) {
