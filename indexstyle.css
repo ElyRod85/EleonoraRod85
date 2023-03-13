@@ -1018,52 +1018,9 @@ header {
 }
 
 
-.frontend {
-  order: 1;
-  flex-basis: 30%;
-  display: flex;
-  padding: 0;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
-.frontend .frontend-text {
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-.dark .frontend .frontend-text {
-  color: rgb(192, 192, 192);
-}
-
-
-.frontend-text a {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(151, 70, 178);
-}
-
-.frontend-text a:hover {
-  color: rgb(139, 48, 169);
-}
-
-
-.dark .frontend-text a {
-  color: rgb(215, 161, 234);
-}
-
-.dark .frontend-text a:hover {
-  color: rgb(240, 198, 255);
-}
-
-
 
 .data {
-  order: 2;
+  order: 1;
   flex-basis: 30%;
   display: flex;
   padding: 0;
@@ -1103,6 +1060,48 @@ header {
   color: rgb(240, 198, 255);
 }
 
+
+.frontend {
+  order: 2;
+  flex-basis: 30%;
+  display: flex;
+  padding: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.frontend .frontend-text {
+  color: rgb(73, 73, 73);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.dark .frontend .frontend-text {
+  color: rgb(192, 192, 192);
+}
+
+
+.frontend-text a {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(151, 70, 178);
+}
+
+.frontend-text a:hover {
+  color: rgb(139, 48, 169);
+}
+
+
+.dark .frontend-text a {
+  color: rgb(215, 161, 234);
+}
+
+.dark .frontend-text a:hover {
+  color: rgb(240, 198, 255);
+}
 
 
 .cloud {
@@ -1282,16 +1281,9 @@ header {
   padding: 20px;
 }
 
-.dark .study-logos2 img {
-  filter: drop-shadow(0 0 8px rgb(241, 211, 255));
-  -webkit-filter: drop-shadow(0 0 8px rgb(241, 211, 255));
-  transition: 500ms;
-}
-
-.dark .study-logos2 img:hover {
-  filter: drop-shadow(0 0 2px rgb(255, 255, 255));
-  -webkit-filter: drop-shadow(0 0 2px rgb(255, 255, 255));
-  transition: 500ms;
+.dark .bright-logos img {
+  filter: brightness(3) contrast(60%) saturate(170%);
+  -webkit-filter: brightness(3) contrast(60%) saturate(170%);
 }
 
 
@@ -1299,6 +1291,7 @@ header {
 @media only screen and (max-width: 1200px) {
   .data {
     flex-basis: 47%;
+    order: 2;
   }
 
   .cloud {
@@ -1307,6 +1300,7 @@ header {
 
   .frontend {
     flex-basis: 47%;
+    order: 1;
   }
   
   .projectm {
@@ -1323,6 +1317,7 @@ header {
     flex-basis: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
+    order: 2;
   }
 
   .cloud {
@@ -1335,6 +1330,7 @@ header {
     flex-basis: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
+    order: 1;
   }
   
   .projectm {
@@ -1376,34 +1372,6 @@ header {
     margin-top: 0;
     margin-bottom: 20px;
   }
-}
-
-.study-logos {
-  text-align: center;
-  padding: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
-}
-
-.study-logos img {
-  max-width: 200px;
-  max-height: 100px;
-  padding: 20px;
-}
-
-.dark .study-logos img {
-  filter: drop-shadow(0 0 8px rgb(241, 211, 255));
-  -webkit-filter: drop-shadow(0 0 8px rgb(241, 211, 255));
-  transition: 500ms;
-}
-
-.dark .study-logos img:hover {
-  filter: drop-shadow(0 0 3px rgb(255, 255, 255));
-  -webkit-filter: drop-shadow(0 0 3px rgb(255, 255, 255));
-  transition: 500ms;
 }
 
 .card1 details {
