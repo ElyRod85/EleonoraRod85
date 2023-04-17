@@ -437,10 +437,7 @@ header {
   justify-content: space-evenly;
   align-items: stretch;
   align-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 20px auto;
   gap: 20px 10px;
 }
 
@@ -464,10 +461,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 10px auto;
   gap: 20px 10px;
 }
 
@@ -621,10 +615,7 @@ header {
   justify-content: center;
   align-items: stretch;
   align-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 20px auto;
 }
 
 .what h1 {
@@ -675,10 +666,7 @@ header {
   justify-content: center;
   align-items: stretch;
   align-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 20px auto;
 }
 
 .frames {
@@ -690,19 +678,13 @@ header {
   justify-content: center;
   align-items: stretch;
   align-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 20px auto;
 }
 
 .what-title i {
   display: block;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 40px auto;
   color: rgb(133, 62, 156);
 }
 
@@ -763,10 +745,7 @@ header {
   justify-content: space-evenly;
   align-items: stretch;
   align-content: flex-start;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 20px auto;
   gap: 5px 5px;
 }
 
@@ -1002,10 +981,7 @@ header {
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 30px auto 20px auto;
   gap: 20px 30px;
 }
 
@@ -1268,10 +1244,7 @@ header {
 .study-logos2 {
   text-align: center;
   padding: 0;
-  margin-top: 10px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 0 auto;
   max-width: 90%;
 }
 
@@ -1762,10 +1735,7 @@ header {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0;
   max-width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 10px 5px 10px;
   line-height: 1.8;
 }
 
@@ -1804,10 +1774,7 @@ header {
 .contact-form {
   width: 100%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0 auto 0 auto;
   padding-bottom: 10px;
   padding-top: 5px;
 }
@@ -1833,10 +1800,7 @@ header {
 
 .contact-form button {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin: 20px auto 50px auto;
   font-size: 18px;
   font-family: 'Rubik', sans-serif;
   padding: 15px 30px;
@@ -1874,16 +1838,12 @@ header {
 .contact-form input {
   width: 50%;
   padding: 15px 20px;
-  margin-bottom: 50px;
   box-sizing: border-box;
   display: block;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   border-radius: 10px;
-  margin-bottom: 50px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 50px auto;
   border:rgba(0, 0, 0, 0.6) solid 3px;
   background-color:rgba(255, 255, 255, 0.9);
 }
@@ -1909,10 +1869,7 @@ header {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   border-radius: 10px;
-  margin-bottom: 50px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 50px auto;
   border:rgba(0, 0, 0, 0.6) solid 3px;
   background-color:rgba(255, 255, 255, 0.9);
 }
@@ -2030,10 +1987,7 @@ header {
   color: rgb(57, 57, 57);
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 20px auto;
   transition: 500ms;
 }
 
@@ -2085,10 +2039,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto 0 auto;
 }
 
 
@@ -2310,10 +2261,7 @@ color: rgb(133, 62, 156);
   font-weight: 900;
   line-height: 1.5;
   padding: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
   text-align: center;
 
 }
@@ -2388,10 +2336,7 @@ color: rgb(133, 62, 156);
   justify-items: center;
   align-items: center;
   align-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 20px auto;
   transition: 500ms;
 }
 
