@@ -1361,10 +1361,11 @@ header {
   }
   .marketing {
     flex-basis: 47%;
-    order: 2;
+    order: 3;
   }
   .ux {
     flex-basis: 47%;
+    order: 2;
   }
   .data {
     flex-basis: 47%;
@@ -1386,7 +1387,6 @@ header {
     flex-basis: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
-    order: 2;
   }
 
   .ux {
@@ -1398,7 +1398,6 @@ header {
     flex-basis: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
-    order: 2;
   }
 
   .cloud {
@@ -1411,7 +1410,6 @@ header {
     flex-basis: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
-    order: 1;
   }
   
   .projectm {
@@ -2420,6 +2418,26 @@ color: rgb(133, 62, 156);
 
 }
 
+.samples-box8 {
+  order: 8;
+  flex-basis: 31%;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  color: rgb(73, 73, 73);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  font-size: 18px;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 20px 10px;
+
+}
+
 .dark .samples-box1 {
   color: rgb(192, 192, 192);
 }
@@ -2445,6 +2463,10 @@ color: rgb(133, 62, 156);
 }
 
 .dark .samples-box7 {
+  color: rgb(192, 192, 192);
+}
+
+.dark .samples-box8 {
   color: rgb(192, 192, 192);
 }
 
@@ -2533,6 +2555,11 @@ color: rgb(133, 62, 156);
     margin-top: 10px;
     margin-bottom: 20px;
   }
+  .samples-box8 {
+    flex-basis: 48%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -2576,6 +2603,11 @@ color: rgb(133, 62, 156);
     margin-bottom: 20px;
   }
   .samples-box7 {
+    flex-basis: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .samples-box8 {
     flex-basis: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
