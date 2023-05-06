@@ -1090,49 +1090,6 @@ header {
 }
 
 
-
-.data {
-  order: 4;
-  flex-basis: 30%;
-  display: flex;
-  padding: 0;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
-
-.data .data-text {
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-.dark .data .data-text {
-  color: rgb(192, 192, 192);
-}
-
-.data-text a {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(151, 70, 178);
-}
-
-.data-text a:hover {
-  color: rgb(139, 48, 169);
-}
-
-.dark .data-text a {
-  color: rgb(215, 161, 234);
-}
-
-.dark .data-text a:hover {
-  color: rgb(240, 198, 255);
-}
-
-
 .frontend {
   order: 2;
   flex-basis: 30%;
@@ -1176,89 +1133,6 @@ header {
 }
 
 
-.cloud {
-  order: 5;
-  flex-basis: 30%;
-  display: flex;
-  padding: 0;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
-.cloud .cloud-text {
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-.dark .cloud .cloud-text {
-  color: rgb(192, 192, 192);
-}
-
-.cloud-text a {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(151, 70, 178);
-}
-
-.cloud-text a:hover {
-  color: rgb(139, 48, 169);
-}
-
-.dark .cloud-text a {
-  color: rgb(215, 161, 234);
-}
-
-.dark .cloud-text a:hover {
-  color: rgb(240, 198, 255);
-}
-
-
-.projectm {
-  order: 6;
-  flex-basis: 30%;
-  display: flex;
-  padding: 0;
-  transition: 0.3s;
-  border-radius: 10px;
-}
-
-.projectm .projectm-text {
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-}
-
-.dark .projectm .projectm-text {
-  color: rgb(192, 192, 192);
-}
-
-.projectm-text a {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
-  color: rgb(151, 70, 178);
-}
-
-.projectm-text a:hover {
-  color: rgb(139, 48, 169);
-}
-
-.dark .projectm-text a {
-  color: rgb(215, 161, 234);
-}
-
-.dark .projectm-text a:hover {
-  color: rgb(240, 198, 255);
-}
-
-
-
 .tea {
   order: 7;
   flex-basis: 30%;
@@ -1299,7 +1173,6 @@ header {
 .dark .tea-text a:hover {
   color: rgb(240, 198, 255);
 }
-
 
 
 .study-year {
@@ -1367,16 +1240,6 @@ header {
     flex-basis: 47%;
     order: 2;
   }
-  .data {
-    flex-basis: 47%;
-  }
-
-  .cloud {
-    flex-basis: 47%;
-  }
-  .projectm {
-    flex-basis: 47%;
-  }
   .tea {
     flex-basis: 47%;
   }
@@ -1388,36 +1251,16 @@ header {
     margin-top: 5px;
     margin-bottom: 10px;
   }
-
   .ux {
     flex-basis: 100%;
     margin-top: 5px;
     margin-bottom: 10px;
   }
-  .data {
-    flex-basis: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
-  .cloud {
-    flex-basis: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
   .frontend {
     flex-basis: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
   }
-  
-  .projectm {
-    flex-basis: 100%;
-    margin-top: 5px;
-    margin-bottom: 10px;
-  }
-
   .tea {
     flex-basis: 100%;
     margin-top: 20px;
@@ -2378,66 +2221,6 @@ color: rgb(133, 62, 156);
 
 }
 
-.samples-box6 {
-  order: 6;
-  flex-basis: 31%;
-  display: flex;
-  padding-top: 0;
-  padding-bottom: 30px;
-  margin-top: 10px;
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  font-size: 18px;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-  gap: 20px 10px;
-
-}
-
-.samples-box7 {
-  order: 7;
-  flex-basis: 31%;
-  display: flex;
-  padding-top: 0;
-  padding-bottom: 30px;
-  margin-top: 10px;
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  font-size: 18px;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-  gap: 20px 10px;
-
-}
-
-.samples-box8 {
-  order: 8;
-  flex-basis: 31%;
-  display: flex;
-  padding-top: 0;
-  padding-bottom: 30px;
-  margin-top: 10px;
-  color: rgb(73, 73, 73);
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  width: 100%;
-  font-size: 18px;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-  gap: 20px 10px;
-
-}
-
 .dark .samples-box1 {
   color: rgb(192, 192, 192);
 }
@@ -2455,18 +2238,6 @@ color: rgb(133, 62, 156);
 }
 
 .dark .samples-box5 {
-  color: rgb(192, 192, 192);
-}
-
-.dark .samples-box6 {
-  color: rgb(192, 192, 192);
-}
-
-.dark .samples-box7 {
-  color: rgb(192, 192, 192);
-}
-
-.dark .samples-box8 {
   color: rgb(192, 192, 192);
 }
 
@@ -2545,21 +2316,6 @@ color: rgb(133, 62, 156);
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .samples-box6 {
-    flex-basis: 48%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .samples-box7 {
-    flex-basis: 48%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .samples-box8 {
-    flex-basis: 48%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
 }
 
 
@@ -2595,22 +2351,6 @@ color: rgb(133, 62, 156);
     flex-basis: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-
-  .samples-box6 {
-    flex-basis: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .samples-box7 {
-    flex-basis: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  .samples-box8 {
-    flex-basis: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
   }
 }
 
