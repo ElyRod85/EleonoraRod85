@@ -2431,3 +2431,38 @@ color: rgb(133, 62, 156);
     margin-right: auto;
   }
 }
+
+
+
+/* New portfolio notice */
+
+main #new-portfolio {
+  width: fit-content; margin: 50px auto;
+  border: 2px solid #989898;
+  padding: 50px 60px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  main #new-portfolio {
+    width: 100%;
+  }
+}
+
+main #new-portfolio .new-contents {
+  text-align: center;
+}
+
+main #new-portfolio .new-contents p {
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+main #new-portfolio .new-contents a {
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1.7;
+  font-weight: 800;
+}
