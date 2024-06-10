@@ -1,4 +1,4 @@
 
 ## This portfolio is deprecated!
 
-Check [my updated portfolio](https://github.com/ElyRod85/ElyPortfolio)!
+Check [my updated portfolio](https://elyrod85.github.io/ElliePortfolio/)!
